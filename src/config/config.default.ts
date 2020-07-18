@@ -16,7 +16,7 @@ export default (): Configuration => ({
   port: 3000,
   sequelize: {
     dialect: 'mysql',
-    host: 'localhost',
+    host: '47.116.3.37',
     port: 3304,
     username: 'root',
     password: 'xt87464579',
