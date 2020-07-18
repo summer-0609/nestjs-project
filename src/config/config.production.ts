@@ -1,7 +1,7 @@
 import defaultConfig, { Configuration } from './config.default';
 
 export default (): Configuration =>
-  Object.assign(defaultConfig, {
+  Object.assign({}, defaultConfig, {
     port: 3000,
     sequelize: {
       dialect: 'mysql',
