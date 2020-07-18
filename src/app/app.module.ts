@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 // import { LoggerMiddleware, Logger2Middleware, logger } from './logger.middleware'
 import { AuthModule } from './auth/auth.module';
 
+console.log(555, process.env.NODE_ENV)
 const configuration = require(`../config/config.${process.env.NODE_ENV ||
   'default'}`).default;
 
