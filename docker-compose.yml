@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: xt87464579
+      MYSQL_DATABASE: test
+  nestjs:
+    # image: node:alpine
+    build: .
+    ports:
+      - '8083:3000'
+    # volumes:
+    #   - ./:/home/node/app
+    # working_dir: /home/node/app/dist
+    # command: node main.js
